@@ -17,7 +17,7 @@ int main ()
     cin >> classB;
     cout << "Enter the number of Tickets sold for Class C:";
 
-    total = (classA * priceA) + (classB+ * priceB) + (classC * priceC);
+    total = (classA * priceA) + (classB * priceB) + (classC * priceC);
 
     cout << "Total price for ticket sold" << total << endl;
 
