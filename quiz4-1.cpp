@@ -11,9 +11,9 @@ int main()
     const double Pi = 3.14;
 
     cout << "Which formula do you want to see?\n";
-    cout << "Enter 1. For radious of a circle" << endl;
-    cout << "Enter 2. For width of rectangle" << endl;
-    cout << "Enter 3. For length of triangle" << endl;
+    cout << "Enter 1. For calculating area of a circle" << endl;
+    cout << "Enter 2. For calculating area of rectangle" << endl;
+    cout << "Enter 3. For calculating area of triangle" << endl;
     cout << "Enter 4. To quit program!" << endl;
 
     while (1==1)
