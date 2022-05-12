@@ -1,33 +1,33 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-void getinput (int X, int Y)
+void getinput (int *X, int *Y)
 {
     cout << "Enter the value for the first number: ";
-    cin >> X;
+    cin >> *X;
     cout << "Enter the value for the second number: ";
-    cin >> Y;
+    cin >> *Y;
 }
 
-int isSame (int X, int Y)
+int isSame (int *X, int *Y)
 {
-    if (X == Y)
+    if (*X == *Y)
     {
         return 1;
     }
 }
 
-float intDivision (int X, int Y)
+float intDivision (int *X, int *Y)
 {
-    if (X > Y)
+    if (*X > *Y)
     {
         cout << "\n Divide the first number by the second number...";
-        return float (X) / float (Y);
+        return float (*X) / float (*Y);
     }
     else
     {
         cout << "\n Divide the second number by the first number...";
-        return float (Y) / float (X);
+        return float (*Y) / float (*X);
     }
 }
 
@@ -45,7 +45,7 @@ int main ()
     int N1, N2;
     float result;
 
-    getInput (&N1, &N2);
+    getinput (&N1, &N2);
 
     if (isSame(&N1, &N2)==1)
     {
@@ -59,7 +59,7 @@ int main ()
     cout << "\n Dividing both numbers is equal to: " << result;
 }
 
-filewrite(result);
+fileWrite(result);
 
 exit;
 }
