@@ -31,6 +31,10 @@ int main()
     for (int i=0;i<10;i++)
     {
         int n = getRdnum();
+        cout << n << " ";
+        if (isGreater (n))
+        f << n << " ";
 
     }
+    f.close();
 }
